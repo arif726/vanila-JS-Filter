@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
     font-family: "Open Sans", sans-serif;
@@ -13,7 +12,7 @@ body{
 }
 
 .leftManeu{
-    flex: 2;
+    flex: 1;
 }
 
 .search{
@@ -30,25 +29,24 @@ body{
     cursor: pointer;
     font-size: 20px;
     font-weight: 300;
-    gap: 10px;
-}
-
-.priceRange{
-    margin-top: 20px;
+    line-height: 40px;
 }
 
 .content{
     flex: 4;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .product{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
 }
 
 img{
@@ -57,12 +55,6 @@ img{
   object-fit: contain;
 }
 
-.productDescription{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 5px;
-}
 h1{
     font-size: 30px;
     font-weight: 400;
